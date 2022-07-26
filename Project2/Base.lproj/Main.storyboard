@@ -16,16 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fck-ne-QPT">
-                                <rect key="frame" x="95" y="100" width="224" height="114"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fck-ne-QPT">
+                                <rect key="frame" x="95" y="100" width="224" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fck-ne-QPT" secondAttribute="height" multiplier="112:65" id="9DT-Zk-M76"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us" imagePadding="0.0"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7K-Tc-l6G"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxR-If-96Z">
                                 <rect key="frame" x="107" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nxR-If-96Z" secondAttribute="height" multiplier="2:1" id="xAR-ZF-ghj"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -34,6 +40,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elK-Jf-PB1">
                                 <rect key="frame" x="107" y="372" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="elK-Jf-PB1" secondAttribute="height" multiplier="2:1" id="9ah-TN-Tf4"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="us"/>
                                 <connections>
@@ -47,7 +56,10 @@
                             <constraint firstItem="elK-Jf-PB1" firstAttribute="top" secondItem="nxR-If-96Z" secondAttribute="bottom" constant="42" id="4i2-4L-Aa6"/>
                             <constraint firstItem="nxR-If-96Z" firstAttribute="top" secondItem="fck-ne-QPT" secondAttribute="bottom" constant="30" id="5Gq-Lw-FgP"/>
                             <constraint firstItem="nxR-If-96Z" firstAttribute="centerX" secondItem="fck-ne-QPT" secondAttribute="centerX" id="5mq-HJ-b7c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="elK-Jf-PB1" secondAttribute="bottom" constant="20" id="6Kx-db-CLH"/>
                             <constraint firstItem="elK-Jf-PB1" firstAttribute="centerX" secondItem="nxR-If-96Z" secondAttribute="centerX" id="TVv-wg-L2i"/>
+                            <constraint firstItem="nxR-If-96Z" firstAttribute="height" secondItem="fck-ne-QPT" secondAttribute="height" multiplier="0.877193" id="Tah-bF-2bF"/>
+                            <constraint firstItem="elK-Jf-PB1" firstAttribute="height" secondItem="nxR-If-96Z" secondAttribute="height" id="cmZ-Lq-l3v"/>
                             <constraint firstItem="fck-ne-QPT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="noa-ip-cHx"/>
                             <constraint firstItem="fck-ne-QPT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="rzV-Af-e4C"/>
                         </constraints>
